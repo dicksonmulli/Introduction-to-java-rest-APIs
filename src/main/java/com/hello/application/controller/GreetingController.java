@@ -1,6 +1,6 @@
-package com.hello.hellospring.controller;
+package com.hello.application.controller;
 
-import com.hello.hellospring.model.Greeting;
+import com.hello.application.model.Greeting;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;

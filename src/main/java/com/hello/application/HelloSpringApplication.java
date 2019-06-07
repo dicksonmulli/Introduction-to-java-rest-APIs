@@ -1,6 +1,6 @@
-package com.hello.hellospring;
+package com.hello.application;
 
-import com.hello.hellospring.controller.GreetingController;
+import com.hello.application.controller.GreetingController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;

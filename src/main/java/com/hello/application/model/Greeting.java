@@ -1,4 +1,4 @@
-package com.hello.hellospring.model;
+package com.hello.application.model;
 
 public class Greeting {
     private final long id;
