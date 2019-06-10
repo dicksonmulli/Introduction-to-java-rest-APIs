@@ -1,14 +1,13 @@
 package com.hello.application.controller;
 
 import com.hello.application.model.Greeting;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
+@CrossOrigin
+@RequestMapping(value = "/user")
 public class GreetingController {
 
     private static final String template = "Hello, %s!!!";
@@ -20,7 +19,7 @@ public class GreetingController {
         return "Hello";
     }
 
-    @RequestMapping("/greetings")
+    @PostMapping("/greetings")
     public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
         return new Greeting(counter.incrementAndGet(), String.format(template, name));
     }
